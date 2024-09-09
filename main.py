@@ -42,5 +42,8 @@ async def on_message(message):
     
     if message.content.startswith('$stop'):
         await src.commands.stop.default(message, admin, client)
+    
+    if message.content.startswith('$createuser'):
+        await src.commands.createuser.default(message)
 
 client.run(token)
