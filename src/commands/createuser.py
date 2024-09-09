@@ -1,10 +1,5 @@
 # TODO:
-# - add checks for invalid but existing json file
-# - check if person is already in the database
-# - change setting to append? potentially?
-# i feel like using a JSON file is not the best way to do this 
-# But i don't know how else to do this
-# databases?
+# - okay yeah i need to do this in a database
 
 import os
 import json
@@ -39,5 +34,5 @@ async def default(message):
     
     # overwrites the json file with the dictionary
     playerdata_file = open('./data/playerdata.json', 'w')
-    playerdata_file.write(json.dumps(playerdata))
+    playerdata_file.write(json.dumps(playerdata, indent=4))
     playerdata_file.close
