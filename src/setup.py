@@ -5,3 +5,9 @@ def get_token():
     token = json.load(file).get('DiscordKey')
     file.close()
     return token
+
+def get_admin():
+    file = open('secrets.json', 'r')
+    admin = json.load(file).get('AdminUser')
+    file.close()
+    return admin
