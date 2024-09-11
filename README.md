@@ -2,7 +2,7 @@
 Discord bot for managing LAN game setups.
 
 # Installation Setup
-- prerequisites: git, mongodb, python, pip installed, created a bot account from [this](https://discordpy.readthedocs.io/en/latest/discord.html) guide.
+- prerequisites: git, mongoDB, python, pip installed, created a bot account from [this](https://discordpy.readthedocs.io/en/latest/discord.html) guide.
 > [!NOTE]
 > I'm using [MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/) for local development.
 ```
@@ -13,7 +13,7 @@ git clone https://github.com/hahayupgit/dragon-punch.git
 python3 -m venv dragon-punch/
 
 # activate the virtual environment 
-source bot-env/bin/activate
+source dragon-punch/bin/activate
 
 # enter the directory
 cd dragon-punch
@@ -40,6 +40,7 @@ cp secrets-template.json secrets.json
     - Also applicable to avoid constant use of bot commands, can just check the #setups chat
 - Plug into IGDB API in order to have easy access to game titles, also add custom titles
 - Add game info to your profile i.e. mains, favorite games, ping me for x game, etc
+- Implement Docker
 
 # Wider ideas:
 - Cross server setup linkage
@@ -49,3 +50,5 @@ cp secrets-template.json secrets.json
 - https://discordpy.readthedocs.io/en/latest/index.html
 - https://github.com/Whisky-App/uisuki (for minor project structuring)
 - https://www.igdb.com/api
+- https://www.mongodb.com/
+- https://www.docker.com/
