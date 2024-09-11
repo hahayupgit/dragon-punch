@@ -8,6 +8,6 @@ def get_token():
 
 def get_admin():
     file = open('secrets.json', 'r')
-    admin = json.load(file).get('AdminUser')
+    admin = json.load(file).get('AdminUsers')
     file.close()
     return admin
