@@ -2,7 +2,9 @@
 Discord bot for managing LAN game setups.
 
 # Installation Setup
-- prerequisites: git, python, pip installed, created a bot account from [this](https://discordpy.readthedocs.io/en/latest/discord.html) guide.
+- prerequisites: git, mongodb, python, pip installed, created a bot account from [this](https://discordpy.readthedocs.io/en/latest/discord.html) guide.
+> [!NOTE]
+> I'm using [MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/) for local development.
 ```
 # clone the repo
 git clone https://github.com/hahayupgit/dragon-punch.git
@@ -16,8 +18,8 @@ source bot-env/bin/activate
 # enter the directory
 cd dragon-punch
 
-# install the necessary dependencies
-pip install -u discord.py
+# install/update the necessary dependencies from "requirements.txt"
+pip install -Ur requirements.txt
 
 # copy the "secrets-template.json" file and name it "secrets.json"
 cp secrets-template.json secrets.json
