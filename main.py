@@ -2,7 +2,11 @@ import importlib
 import os
 
 import discord
+
+# imports setup command separately
 import src.setup as setup
+
+# for importing commands folder as python modules
 import src.commands
 
 # iterates through all files in ./src/commands
@@ -30,6 +34,7 @@ async def on_ready():
     print(f'We have logged in as {client.user}')
 
 # when the bot recieves a message,
+# this is where we define phrases that the bot replies to with a command
 @client.event
 async def on_message(message):
     
